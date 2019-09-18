@@ -1,15 +1,14 @@
 
-
-module.exports.printStars = (type) => {               
-    if(type == 'hi') {
-        giveMeAJoke.getRandomDadJoke (function(joke) {
-            console.log(joke);
-        });
+module.exports.print = (stars, string) => {
+    if (stars === undefined || string === undefined) {
+        console.log('**********');
+        console.log('hi');
+        console.log('**********');
     }
-   
-    else if(type == 'hola') {
-        giveMeAJoke.getRandomCNJoke (function(joke) {
-            console.log(joke);
-        });
+
+    else {
+        console.log(`*`.repeat(stars));
+        console.log(string);
+        console.log(`*`.repeat(stars));
     }
 }

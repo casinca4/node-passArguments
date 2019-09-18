@@ -1,4 +1,5 @@
-const {printStars} = require(`./stars`);
+const {print} = require(`./stars`);
 
-greeting = process.argv[2];               
-printStars(greeting);
+const stars = process.argv[2]; 
+const string = process.argv[3];                     
+print(stars, string);
